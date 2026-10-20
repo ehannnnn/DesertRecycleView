@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingVertical="12dp">
+
+    <!-- Container Lingkaran untuk Gambar Dessert -->
+    <FrameLayout
+        android:id="@+id/imgContainer"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="20dp">
+
+        <ImageView
+            android:id="@+id/imgDessert"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:contentDescription="Dessert Image"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/donut_circle" />
+
+    </FrameLayout>
+
+    <!-- Deskripsi Dessert -->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:lineSpacingExtra="3dp"
+        android:textColor="#4A454E"
+        android:textSize="14sp"
+        tools:text="Donuts are glazed and sprinkled with candy." />
+
+</LinearLayout>
